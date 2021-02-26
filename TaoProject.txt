@@ -1,0 +1,18 @@
+B1: Tải yarn để tạo project nhanh hơn:
+Vào cmd gõ : choco install yarn
+------------------- Bỏ qua nếu đã tải yarn -------------------
+B2: Vào thư mục muốn tạo, chọn cmd và nhập:
+-  react-native init Nameproject
+
+//với expo
+expo init NameProject
+
+B3: Mở máy lên ảo hay thật, trỏ cmd vào thư mục project
+
+-  react-native start    (chạy cổng 8081 kết nối đến device)
+
+ new cmd trỏ đến thư mục project
+-  react-native run-android
+
+//với  expo: 
+-  expo start

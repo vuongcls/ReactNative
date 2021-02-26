@@ -1,0 +1,23 @@
+B1: Cài đặt choco bằng cmd (bằng quyền admin)
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+
+- Tắt cmd và mở lại: gõ choco để kiểm tra
+
+B2: Tắt cmd mở lại bằng quyền admin chạy lệnh
+choco install -y nodejs.install openjdk8
+
+B3: Tắt cmd mở lại bằng quyền admin chạy lệnh
+npm install -g react-native-cli
+
+B4: Cài android studio. 
+- mở configure
+- Cài các sdk theo hướng dẫn trên trang chủ react-native (có thay đổi cập nhật)
+
+B5: Cài biến môi trường ANDROID_HOME
+Với path là:
+C:\Users\M4600\AppData\Local\Android\Sdk
+
+Tương tự với các JAVA
+
+Path new
+C:\Users\M4600\AppData\Local\Android\Sdk\platform-tools
