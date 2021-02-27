@@ -18,36 +18,51 @@ import {
 
 const App: () => React$Node = () => {
   return (
-    <View style={styles.container}>
-      <View style={styles.top}>
-        <View style={styles.topLeft}>
-          <View style={styles.topLeftOne}></View>
-          <View style={styles.topLeftTwo}></View>
+    <>
+      <StatusBar barStyle="dark-content" />
+      <View style={styles.container}>
+        <View style={styles.top}>
+          <View style={styles.topLeft}>
+            <View style={styles.topLeftOne}></View>
+            <View style={styles.topLeftTwo}></View>
+          </View>
+          <View style={styles.topRight}>
+            <View
+              style={{
+                width: 200,
+                height: 200,
+                backgroundColor: 'powderblue',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}>
+              <Text
+                style={{color: 'steelblue', fontSize: 20, fontWeight: 'bold'}}>
+                ReactNative
+              </Text>
+            </View>
+          </View>
         </View>
-        <View style={styles.topRight}></View>
-      </View>
-      <View style={styles.bottom}>
-        <View style={styles.bottomLeft}></View>
-        <View style={styles.bottomCenter}></View>
-        <View style={styles.bottomRight}>
-          <View style={styles.bottomRightOne}></View>
-          <View style={styles.bottomRightTwo}></View>
+        <View style={styles.bottom}>
+          <View style={styles.bottomLeft}></View>
+          <View style={styles.bottomCenter}></View>
+          <View style={styles.bottomRight}>
+            <View style={styles.bottomRightOne}></View>
+            <View style={styles.bottomRightTwo}></View>
+          </View>
         </View>
       </View>
-    </View>
+    </>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
-    width: '100%',
-    height: '100%',
+    flex: 1,
   },
   top: {
     flexDirection: 'row',
     flex: 6,
-    // backgroundColor: 'red',
   },
   topLeft: {
     flex: 2,
@@ -68,11 +83,13 @@ const styles = StyleSheet.create({
     flex: 5,
     backgroundColor: 'red',
     borderWidth: 5,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   bottom: {
     flexDirection: 'row',
     flex: 3,
-    // backgroundColor: 'yellow',
   },
   bottomLeft: {
     flex: 3,

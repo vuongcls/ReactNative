@@ -16,16 +16,14 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import Cpnone from './components/cpnone';
-
-/* Component gọi component và truyền dữ liệu với props */
-
-const App: () => React$Node = () => {
+const Cpnthree: () => React$Node = (props) => {
   return (
-      <Cpnone name="Tôi tên là: " />
+    <View>
+      <Text>Học tại UTEE</Text>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({});
 
-export default App;
+export default Cpnthree;
