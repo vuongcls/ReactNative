@@ -1,11 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React from 'react';
 import {
   SafeAreaView,
@@ -14,6 +6,8 @@ import {
   View,
   Text,
   StatusBar,
+  TouchableHighlight,
+  TouchableOpacity,
 } from 'react-native';
 
 import {
@@ -27,87 +21,215 @@ import {
 const App: () => React$Node = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
+      <StatusBar style="dark" />
+      <SafeAreaView style={styles.container}>
+        <View style={styles.dongMot}>
+          <Text style={styles.textKetQua}>432</Text>
+        </View>
+        <View style={styles.dongHaiToSau}>
+          <TouchableHighlight
+            style={styles.button}
+            activeOpacity={0.8}
+            underlayColor="white"
+            onPress={() => console.log()}>
+            <Text style={styles.textDen}>C</Text>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style={styles.button}
+            activeOpacity={0.8}
+            underlayColor="white"
+            onPress={() => console.log()}>
+            <Text style={styles.textDen}>±</Text>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style={styles.button}
+            activeOpacity={0.8}
+            underlayColor="white"
+            onPress={() => console.log()}>
+            <Text style={styles.textDen}>%</Text>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style={styles.buttonToanTu}
+            activeOpacity={0.8}
+            underlayColor="black"
+            onPress={() => console.log()}>
+            <Text style={styles.textTrang}>÷</Text>
+          </TouchableHighlight>
+        </View>
+        <View style={styles.dongHaiToSau}>
+          <TouchableHighlight
+            style={styles.button}
+            activeOpacity={0.8}
+            underlayColor="white"
+            onPress={() => console.log()}>
+            <Text style={styles.textDen}>7</Text>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style={styles.button}
+            activeOpacity={0.8}
+            underlayColor="white"
+            onPress={() => console.log()}>
+            <Text style={styles.textDen}>8</Text>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style={styles.button}
+            activeOpacity={0.8}
+            underlayColor="white"
+            onPress={() => console.log()}>
+            <Text style={styles.textDen}>9</Text>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style={styles.buttonToanTu}
+            activeOpacity={0.8}
+            underlayColor="black"
+            onPress={() => console.log()}>
+            <Text style={styles.textTrang}>x</Text>
+          </TouchableHighlight>
+        </View>
+        <View style={styles.dongHaiToSau}>
+          <TouchableHighlight
+            style={styles.button}
+            activeOpacity={0.8}
+            underlayColor="white"
+            onPress={() => console.log()}>
+            <Text style={styles.textDen}>4</Text>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style={styles.button}
+            activeOpacity={0.8}
+            underlayColor="white"
+            onPress={() => console.log()}>
+            <Text style={styles.textDen}>5</Text>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style={styles.button}
+            activeOpacity={0.8}
+            underlayColor="white"
+            onPress={() => console.log()}>
+            <Text style={styles.textDen}>6</Text>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style={styles.buttonToanTu}
+            activeOpacity={0.8}
+            underlayColor="black"
+            onPress={() => console.log()}>
+            <Text style={styles.textTrang}>-</Text>
+          </TouchableHighlight>
+        </View>
+        <View style={styles.dongHaiToSau}>
+          <TouchableHighlight
+            style={styles.button}
+            activeOpacity={0.8}
+            underlayColor="white"
+            onPress={() => console.log()}>
+            <Text style={styles.textDen}>1</Text>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style={styles.button}
+            activeOpacity={0.8}
+            underlayColor="white"
+            onPress={() => console.log()}>
+            <Text style={styles.textDen}>2</Text>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style={styles.button}
+            activeOpacity={0.8}
+            underlayColor="white"
+            onPress={() => console.log()}>
+            <Text style={styles.textDen}>3</Text>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style={styles.buttonToanTu}
+            activeOpacity={0.8}
+            underlayColor="black"
+            onPress={() => console.log()}>
+            <Text style={styles.textTrang}>+</Text>
+          </TouchableHighlight>
+        </View>
+        <View style={styles.dongHaiToSau}>
+          <TouchableHighlight
+            style={styles.button0}
+            activeOpacity={0.8}
+            underlayColor="white"
+            onPress={() => console.log()}>
+            <Text style={styles.textDen}>0</Text>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style={styles.button}
+            activeOpacity={0.8}
+            underlayColor="white"
+            onPress={() => console.log()}>
+            <Text style={styles.textDen}>.</Text>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style={styles.buttonToanTu}
+            activeOpacity={0.8}
+            underlayColor="black"
+            onPress={() => console.log()}>
+            <Text style={styles.textTrang}>=</Text>
+          </TouchableHighlight>
+        </View>
       </SafeAreaView>
     </>
   );
 };
 
+const TEXT = {
+  fontSize: 35,
+};
+
 const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
+  container: {
+    flex: 1,
   },
-  engine: {
-    position: 'absolute',
-    right: 0,
+  dongMot: {
+    width: '100%',
+    height: '100%',
+    backgroundColor: '#45434a',
+    alignItems: 'flex-end',
+    justifyContent: 'flex-end',
+    flex: 1.5,
   },
-  body: {
-    backgroundColor: Colors.white,
+  dongHaiToSau: {
+    flexDirection: 'row',
+    flex: 1,
   },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  button: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#dadfe8',
+    borderWidth: 1,
+    borderColor: '#ebeef2',
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
+  button0: {
+    flex: 2.02,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#dadfe8',
+    borderWidth: 1,
+    borderColor: '#ebeef2',
   },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
+  buttonToanTu: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#f58e33',
+    borderWidth: 1,
+    borderColor: '#ebeef2',
   },
-  highlight: {
-    fontWeight: '700',
+  textDen: {
+    ...TEXT,
   },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
+  textTrang: {
+    ...TEXT,
+    color: 'white',
+  },
+  textKetQua: {
+    fontSize: 60,
+    color: 'white',
+    marginBottom: 10,
+    marginRight: 20,
   },
 });
 
