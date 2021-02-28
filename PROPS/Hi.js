@@ -15,20 +15,18 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import Hello from './src/components/Hello';
 
-const App: () => React$Node = () => {
+
+const Hi: () => React$Node = (props) => {
   return (
     <>
-      <Hello
-        truyenvao="Võ Long Vương"
-        content="Xin chào mọi người! "
-        noidung="React-native"
-      />
+      <Text>{props.abc}</Text>
     </>
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+ 
+});
 
-export default App;
+export default Hi;

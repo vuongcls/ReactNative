@@ -6,6 +6,7 @@ import {
   View,
   Text,
   StatusBar,
+  Alert,
 } from 'react-native';
 
 import {
@@ -15,20 +16,22 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import Hello from './src/components/Hello';
 
-const App: () => React$Node = () => {
+import Hi from '../../Hi'; // nhảy ra 2 cấp
+
+const Hello: () => React$Node = (props) => {
+  const data = props.truyenvao;
+  Alert.alert('Thông báo: ' + data);
+
   return (
     <>
-      <Hello
-        truyenvao="Võ Long Vương"
-        content="Xin chào mọi người! "
-        noidung="React-native"
-      />
+      <Text>{props.content}</Text>
+      <Text>{props.noidung}</Text>
+      <Hi abc="Thực hành props trong react-native"></Hi>
     </>
   );
 };
 
 const styles = StyleSheet.create({});
 
-export default App;
+export default Hello;
